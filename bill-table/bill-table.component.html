@@ -1,0 +1,26 @@
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Amount</th>
+        <th>Date</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let bill of bills">
+        <td>{{ bill.id }}</td>
+        <td>{{ bill.name}}</td>
+        <td>{{ bill.type }}</td>
+        <td>{{ bill.amount }}</td>
+        <td>{{ bill.date | date }}</td>
+        <td>
+          <button (click)="updateBill.emit(bill)">Update</button>
+        <button (click)="deleteBill.emit(bill)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
