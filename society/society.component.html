@@ -1,0 +1,11 @@
+<!-- <h2>Bills</h2>
+<app-bill-table [bills]="bills" (editBill)="editBill($event)" (deleteBill)="deleteBill($event)"></app-bill-table>
+<app-bill-form #billForm></app-bill-form>
+<button (click)="addBill(billForm.billData)">Add Bill</button>
+
+ -->
+ <h2 style="font-size: 20px;text-align: center;color: black;">Bill Details</h2>
+ <app-bill-table [bills]="bills" (updateBill)="updateBill($event)" (deleteBill)="deleteBill($event)"></app-bill-table>
+ <app-bill-form [billForm]="billForm" (submitForm)="addBill($event)"></app-bill-form><br>
+ <!-- <button (click)="billForm.reset()"style="font-size: 20px;border: 3px;border-radius:5px;text-align: center;background-color: rgb(107, 216, 122);">Reset</button> -->
+ 
