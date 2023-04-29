@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h3{
+  font-size: 25px;
+  font-weight: bold;
+  font-family:cursive;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 130px;
+  align-items: center;
+  font-family:cursive;
+}
+
+input {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  width: 300px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 20px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 110px;
+}
+
+button[type="submit"]:hover {
+  background-color: #4d0654;
+}
+
+button[type="reset"] {
+  background-color: #4CAF50;
+  font-size: 20px;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 118px;
+}
+
+button[type="reset"]:hover {
+  background-color: #c33d3d;
+}
+input::placeholder {
+  text-align: center;
+}
+input[type="date"] {
+  text-align: center;
+}
